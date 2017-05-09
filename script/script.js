@@ -1,5 +1,11 @@
 'use strict';
 
+$('.click_case').on('click',function(){
+
+alert($(this).attr('data'));
+
+});
+
 // $(document).ready(function(){
 	//
 	// var repj1=0;

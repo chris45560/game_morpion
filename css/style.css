@@ -33,16 +33,17 @@ a{
 	color: white;
 	font-size: 3rem;
 	display: block;
-	margin: 20px auto;
-	width: 80%;
+	margin: 5px;
+	width: 90%;
+	height: 90%;
 }
 
 a:hover{
 	background-color: white;
 	color: black;
-	border: 2px solid black;
+	/*border: 2px solid black;
 	box-shadow: 4px 4px 4px 4px black;
-	text-shadow: 2px 2px 2px black;
+	text-shadow: 2px 2px 2px black;*/
 }
 
 img{
@@ -54,13 +55,13 @@ img{
 	display: block;
 }
 
-div{
+/*div{
 	margin: 0 auto;
 	width: 95%;
 	text-align: center;
-}
+}*/
 
-div a{
+/*div a{
 	display: inline-block;
 	vertical-align: top;
 	width: 45%;
@@ -70,7 +71,7 @@ div a{
 
 div a:hover{
 	background-color: transparent;
-}
+}*/
 
 div a img{
 	width: 100%;
@@ -172,7 +173,7 @@ button{
 
 /************ MEDIA QUERY RULES *************/
 
-@media screen and (min-width: 400px){
+/*@media screen and (min-width: 400px){
 
 	div a{
 		width: 32%;
@@ -184,7 +185,7 @@ button{
 	div a{
 		width: 24%;
 	}
-}
+}*/
 
 /************ COMMENTAIRES *************/
 
