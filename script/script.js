@@ -7,11 +7,11 @@ $('.empty_case').on('click',function(){
 
 
 $('.empty_case').mouseover(function(){
-  $(this).html("E");
+  $(this).html("X");
 });
 
 $('.empty_case').mouseout(function(){
-  $(this).html("E");
+  $(this).html("");
 });
 
 
