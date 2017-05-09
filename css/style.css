@@ -88,6 +88,10 @@ button{
 
 /************ GENERAL CLASSES RULES *************/
 
+.flex{
+	display: flex;
+}
+
 .modeordi,
 .modedeuxjoueurs{
 	border: 2px solid white;
@@ -98,6 +102,37 @@ button{
 
 .score{
 	text-align: center;
+	margin-top: 20px;
+}
+
+.case{
+	width: 100px;
+	height: 100px;
+	background-color: black;
+	border: 2px solid white;
+	margin: 0;
+	padding: 0;
+}
+
+.no_border_top{
+	border-top: 0;
+}
+
+.no_border_left{
+	border-left: 0
+}
+
+.no_border_right{
+	border-right: 0
+}
+
+.no_border_bottom{
+	border-bottom: 0
+}
+
+.line{
+	justify-content: center;
+	align-items: center;
 }
 
 /************ #IMAGESUSER RULES *************/
