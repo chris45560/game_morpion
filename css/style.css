@@ -112,6 +112,10 @@ button{
 	align-items: center;
 }
 
+.div_game a{
+	font-size: 3rem;
+}
+
 /************ #IMAGESUSER RULES *************/
 
 #imagesuser img:hover {

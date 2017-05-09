@@ -22,37 +22,37 @@
 
     <div class="line div_morpion_top flex">
       <div class="case case_1 no_border_top no_border_left">
-        <a data="case_1" class="empty_case"></a>
+        <a href="javascript:play(1)" data="case_1" class="case_a empty_case"></a>
       </div>
       <div class="case case_2 no_border_top">
-        <a data="case_2" class="empty_case"></a>
+        <a href="javascript:play(2)" data="case_2" class="case_a empty_case"></a>
       </div>
       <div class="case case_3 no_border_top no_border_right">
-        <a data="case_3" class="empty_case"></a>
+        <a href="javascript:play(3)" data="case_3" class="case_a empty_case"></a>
       </div>
     </div>
 
     <div class="line div_morpion_middle flex">
       <div class="case case_4 no_border_left">
-        <a data="case_4" class="empty_case"></a>
+        <a href="javascript:play(4)" data="case_4" class="case_a empty_case"></a>
       </div>
       <div class="case case_5">
-        <a data="case_5" class="empty_case"></a>
+        <a href="javascript:play(5)" data="case_5" class="case_a empty_case"></a>
       </div>
       <div class="case case_6 no_border_right">
-        <a data="case_6" class="empty_case"></a>
+        <a href="javascript:play(6)" data="case_6" class="case_a empty_case"></a>
       </div>
     </div>
 
     <div class="line div_morpion_bottom flex">
       <div class="case case_7 no_border_bottom no_border_left">
-        <a data="case_7" class="empty_case"></a>
+        <a href="javascript:play(7)" data="case_7" class="case_a empty_case"></a>
       </div>
       <div class="case case_8 no_border_bottom">
-        <a data="case_8" class="empty_case"></a>
+        <a href="javascript:play(8)" data="case_8" class="case_a empty_case"></a>
       </div>
       <div class="case case_9 no_border_bottom no_border_right">
-        <a data="case_9" class="empty_case"></a>
+        <a href="javascript:play(9)" data="case_9" class="case_a empty_case"></a>
       </div>
     </div>
 
@@ -64,6 +64,10 @@
   <a href="javascript:chifoumiordi('puits');"><img src="img/puits2.jpg" alt="puits" id="puits"></a>
 </div>
 -->
+
+<div class="div_game">
+  <a href="javascript:game();" id="launchgame">Jouer</a>
+</div>
 
 <div class="score">
   <h2 id="scoreusertitre">Joueur : <span id="scoreuser">0</span></h2><h2 id="scoreordititre">   -   <span id="scoreordi">0</span> : Ordi</h2>
