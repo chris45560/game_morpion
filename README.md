@@ -14,3 +14,4 @@ Futurs projets à venir :
 - Jeu Bataille Navale - Mode 1 et 2 joueurs (JS)
 - Jeu Labyrinthe
 - Jeu du Pendu - Mode 1 et 2 joueurs (JS)
+- Jeu du Mastermind - Mode 1 et 2 joueurs (JS)
