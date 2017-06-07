@@ -11,3 +11,4 @@ Jeu du Morpion en Javascript
 
 Futurs projets à venir :
 - Jeu Bâtons Fort Boyard - Mode 1 et 2 joueurs
+- Jeu Bataille Navale - Mode 1 et 2 joueurs
