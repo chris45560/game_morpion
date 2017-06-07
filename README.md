@@ -13,3 +13,4 @@ Futurs projets à venir :
 - Jeu Bâtons Fort Boyard - Mode 1 et 2 joueurs (JS)
 - Jeu Bataille Navale - Mode 1 et 2 joueurs (JS)
 - Jeu Labyrinthe
+- Jeu du Pendu - Mode 1 et 2 joueurs (JS)
