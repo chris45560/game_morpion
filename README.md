@@ -15,4 +15,4 @@ Futurs projets à venir :
 - Jeu Labyrinthe
 - Jeu du Pendu - Mode 1 et 2 joueurs (JS)
 - Jeu du Mastermind - Mode 1 et 2 joueurs (JS)
-- PONG !
+- PONG ! - Mode 1 joueur
