@@ -5,9 +5,14 @@ En cours de réalisation...
 Jeu du Morpion en Javascript
 
 2 modes de jeu disponibles :
-
+<ul>
+<li>
 + Mode 1 joueur contre l'ordinateur
+</li>
+<li>
 + Mode 2 joueurs
+</li>
+</ul>
 
 <em>
 Futurs projets à venir :
