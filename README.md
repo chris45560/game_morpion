@@ -13,22 +13,22 @@ Jeu du Morpion en Javascript
 Futurs projets à venir :
 <ul>
 <li>
-- Jeu Bâtons Fort Boyard - Mode 1 et 2 joueurs (JS)
+Jeu Bâtons Fort Boyard - Mode 1 et 2 joueurs (JS)
 </li>
 <li>
-- Jeu Bataille Navale - Mode 1 et 2 joueurs (JS)
+Jeu Bataille Navale - Mode 1 et 2 joueurs (JS)
 </li>
 <li>
-- Jeu Labyrinthe (JS)
+Jeu Labyrinthe (JS)
 </li>
 <li>
-- Jeu du Pendu - Mode 1 et 2 joueurs (JS)
+Jeu du Pendu - Mode 1 et 2 joueurs (JS)
 </li>
 <li>
-- Jeu du Mastermind - Mode 1 et 2 joueurs (JS)
+Jeu du Mastermind - Mode 1 et 2 joueurs (JS)
 </li>
 <li>
-- PONG ! - Mode 1 et 2 joueurs (JS)
+PONG ! - Mode 1 et 2 joueurs (JS)
 </li>
 </ul>
 </em>
