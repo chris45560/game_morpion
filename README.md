@@ -1,7 +1,8 @@
 # game_morpion
 
-En cours de réalisation...
-In progress
+<p>En cours de réalisation...</p>
+<p>In progress</p>
+
 Jeu du Morpion en Javascript
 
 2 modes de jeu disponibles :
