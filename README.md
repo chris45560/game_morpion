@@ -1,7 +1,7 @@
 # game_morpion
 
 En cours de réalisation...
-
+In progress
 Jeu du Morpion en Javascript
 
 2 modes de jeu disponibles :
