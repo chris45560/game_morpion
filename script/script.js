@@ -24,6 +24,7 @@ function tirage_au_sort()
 
 function game()
 {
+    reset();
   /* COMMENCEMENT DE LA PARTIE */
 
   $('.empty_case').mouseover(function(){
@@ -64,7 +65,10 @@ function play(nombre)
         playordi();
         alert("Partie terminée !");
       }
-      playordi();
+      else
+      {
+        playordi();
+      }
     }
     else 
     { 
@@ -89,4 +93,10 @@ function playordi()
   $('.case_a').eq(elements_ordi).html("0");
   $('.case_a').eq(elements_ordi).removeClass("empty_case").removeClass("hover_case").addClass("click_case");
   tableau_morpion[elements_ordi] = "";
+}
+
+function reset()
+{
+  $('.click_case').html("").removeClass("click_case").addClass("empty_case");
+  tableau_morpion = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 }
