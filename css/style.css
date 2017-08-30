@@ -64,6 +64,15 @@ a:hover{
 	padding: 0;
 	font-size: 6rem;
 	width: 100%;
+	background-color: black;
+}
+
+.hover_case{
+	margin: 0;
+	padding: 0;
+	font-size: 6rem;
+	width: 100%;
+	background-color: black;
 }
 
 img{

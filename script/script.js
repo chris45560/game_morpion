@@ -1,7 +1,7 @@
 'use strict';
 
 var tableau_morpion = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-
+var des;
 
 function regles_du_jeu()
 {
@@ -10,27 +10,34 @@ function regles_du_jeu()
 
 function tirage_au_sort()
 {
-  var des = Math.floor((Math.random() * 2) + 1); // Retourne soit 1 soit 2
+  des = Math.floor((Math.random() * 2) + 1); // Retourne soit 1 soit 2
   if(des == 1)
-  { alert("Vous commencez !"); }
-  else
-  { alert("Chimix commence !");
+  { 
+    alert("Vous commencez !"); 
+  }
+  else 
+  { 
+    alert("Chimix commence !");
     playordi();
   }
 }
 
 function game()
 {
-    /* COMMENCEMENT DE LA PARTIE */
+  /* COMMENCEMENT DE LA PARTIE */
 
   $('.empty_case').mouseover(function(){
     if($(this).hasClass('empty_case'))
-    { $(this).html("X"); }
+    { 
+      $(this).html("X").removeClass("empty_case").addClass("hover_case"); 
+    }
   });
 
   $('.empty_case').mouseout(function(){
-    if($(this).hasClass('empty_case'))
-    { $(this).html(""); }
+    if($(this).hasClass('hover_case'))
+    { 
+      $(this).html("").removeClass("hover_case").addClass("empty_case"); 
+    }
   });
 
   regles_du_jeu();
@@ -46,17 +53,28 @@ function play(nombre)
     if(tableau_morpion.indexOf(nombre) != -1)
     {
       $('.case_a').eq(elements).html("X");
-      $('.case_a').eq(elements).removeClass("empty_case").addClass("click_case");
+      $('.case_a').eq(elements).removeClass("empty_case").removeClass("hover_case").addClass("click_case");
       tableau_morpion[elements] = "";
-      if($('.empty_case').length != 0)
+      if($('.empty_case').length == 0 && des == 1)
+      {
+        alert("Partie terminée !");
+      }
+      else if(($('.empty_case').length == 1 && des == 2))
       {
         playordi();
+        alert("Partie terminée !");
       }
-      else{ alert("Partie terminée !"); }
+      playordi();
     }
-    else { alert("Case occupée"); }
+    else 
+    { 
+      alert("Case occupée"); 
+    }
   }
-  else { alert("Le nombre doit être entier et compris entre 1 et 9"); }
+  else 
+  { 
+    alert("Le nombre doit être entier et compris entre 1 et 9"); 
+  }
 }
 
 function playordi()
@@ -69,6 +87,6 @@ function playordi()
   while($('.case_a').eq(elements_ordi).html() == "X" || $('.case_a').eq(elements_ordi).html() == "0");
 
   $('.case_a').eq(elements_ordi).html("0");
-  $('.case_a').eq(elements_ordi).removeClass("empty_case").addClass("click_case");
+  $('.case_a').eq(elements_ordi).removeClass("empty_case").removeClass("hover_case").addClass("click_case");
   tableau_morpion[elements_ordi] = "";
 }
