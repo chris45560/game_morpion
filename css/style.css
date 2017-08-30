@@ -39,10 +39,16 @@ a{
 	text-align: center;
 	cursor: pointer;
 }
+/*
+a:not(.empty_case):hover{
+	background-color: white;
+	color: black;
+}
+*/
 
 a:hover{
 	background-color: white;
-	color: black;
+	color: white;
 }
 
 img{
