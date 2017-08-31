@@ -1,11 +1,18 @@
 'use strict';
 
 var tableau_morpion = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+var tableau_win_player = [];
+var tableau_win_ordi = [];
 var des;
+var regles=true;
 
 function regles_du_jeu()
 {
-  alert("Voici les règles du morpion : \n Le but du jeu est d'aligner trois croix ou trois ronds. Le premier qui réussit à aligner trois de ses signes remporte la manche.\n Il y a autant de manches que vous désirez. Il suffit de réinitialiser la grille à la fin de la manche en cliquant sur le lien ou d'attendre qu'elle se réinitialise toute seule (15 sec)");
+   if(!regles) return;
+
+   regles=false;
+
+   alert("Voici les règles du morpion : \n Le but du jeu est d'aligner trois croix ou trois ronds. Le premier qui réussit à aligner trois de ses signes remporte la manche.\n Il y a autant de manches que vous désirez. Il suffit de réinitialiser la grille à la fin de la manche en cliquant sur le lien ou d'attendre qu'elle se réinitialise toute seule (15 sec)");
 }
 
 function tirage_au_sort()
@@ -27,6 +34,8 @@ function game()
     reset();
   /* COMMENCEMENT DE LA PARTIE */
 
+  $('.div_morpion').removeClass("hide");
+
   $('.empty_case').mouseover(function(){
     if($(this).hasClass('empty_case'))
     { 
@@ -47,6 +56,7 @@ function game()
 
 function play(nombre)
 {
+
   if(nombre >= 1 && nombre <= 9)
   {
     nombre = parseInt(nombre);
@@ -56,14 +66,18 @@ function play(nombre)
       $('.case_a').eq(elements).html("X");
       $('.case_a').eq(elements).removeClass("empty_case").removeClass("hover_case").addClass("click_case");
       tableau_morpion[elements] = "";
+      tableau_win_player.push(nombre);
+      win();
+
       if($('.empty_case').length == 0 && des == 1)
       {
-        alert("Partie terminée !");
+        setTimeout(try_again, 100); 
       }
       else if(($('.empty_case').length == 1 && des == 2))
       {
         playordi();
-        alert("Partie terminée !");
+        win();
+        setTimeout(try_again, 1000); 
       }
       else
       {
@@ -93,10 +107,37 @@ function playordi()
   $('.case_a').eq(elements_ordi).html("0");
   $('.case_a').eq(elements_ordi).removeClass("empty_case").removeClass("hover_case").addClass("click_case");
   tableau_morpion[elements_ordi] = "";
+  tableau_win_ordi.push(case_ordi);
 }
 
 function reset()
 {
   $('.click_case').html("").removeClass("click_case").addClass("empty_case");
   tableau_morpion = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+}
+
+function try_again()
+{
+  alert("Partie terminée !");
+  if(confirm("Une autre partie ?"))
+  {
+    game();
+  }
+}
+
+function win(){
+  var twp = tableau_win_player;
+  var two = tableau_win_ordi;
+
+  for(int i=0; i<tableau_win_player.length; i++)
+  {
+    if(twp[i]!="")
+    {
+      twp[i] = twp[i].toString();
+      var resultat += twp[i];
+    }
+  }
+  alert(tableau_win_player);
+  alert(tableau_win_ordi);
+  alert(resultat);
 }

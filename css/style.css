@@ -98,6 +98,10 @@ button{
 	text-shadow: 1px 1px 1px black;
 }
 
+.hide{
+	display: none;
+}
+
 /************ GENERAL CLASSES RULES *************/
 
 .flex{
