@@ -125,19 +125,21 @@ function try_again()
   }
 }
 
-function win(){
+function win()
+{
   var twp = tableau_win_player;
   var two = tableau_win_ordi;
+  var resultat;
 
-  for(int i=0; i<tableau_win_player.length; i++)
+  for(var i=0; i<twp.length-1; i++)
   {
     if(twp[i]!="")
     {
       twp[i] = twp[i].toString();
-      var resultat += twp[i];
+      resultat += twp[i];
     }
   }
-  alert(tableau_win_player);
-  alert(tableau_win_ordi);
+  alert(twp);
+  alert(two);
   alert(resultat);
 }
