@@ -2,6 +2,8 @@
 
 <p>En cours de réalisation...<br>
 <em>In progress...</em></p>
+
+<p>Bientôt !!...<br>
 </p>
 
 Jeu du Morpion en Javascript
